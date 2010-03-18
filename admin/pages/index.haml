@@ -17,12 +17,19 @@
               %span.title Home Page
             %img#busy_1.busy{:title=>"", :src=>"/images/admin/spinner.gif", :alt=>"", :style=>"display: none;"}/
         %td.status.published_status Published
-        %td.add_child
-          %a{:href=>"/admin/pages/new"}
-            Add Child
-        %td.remove
-          %a{:href=>"/admin/pages/remove"}
-            Remove
+        %td.modify{:colspan => 2}
+          .option_menu
+            .options
+              %a.add{:href=>"/admin/pages/new"}
+                Add Child
+              %a.remove{:href=>"/admin/pages/remove"}
+                Remove
+              %a{:href=>"#"}
+                Comments
+              %a{:href=>"#"}
+                Move to...
+              %a{:href=>"#"}
+                Copy to...
       %tr#page_2.node.level_1.no_children.virtual
         %td.page{:style=>"padding-left: 32px"}
           %span.w1
